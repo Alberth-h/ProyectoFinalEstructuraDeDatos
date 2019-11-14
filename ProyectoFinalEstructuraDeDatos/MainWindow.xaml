@@ -7,7 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox HorizontalAlignment="Left" Height="399" Margin="522,10,0,0" VerticalAlignment="Top" Width="260"/>
+        <ListView x:Name="lsNombreAnno" HorizontalAlignment="Left" Height="349" Margin="10,10,0,0" VerticalAlignment="Top" Width="260">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding nombre}" Header="Nombre" Width="160"></GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Anno}" Header="Año" Width="120"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnNuevoElemento" Content="Nuevo Elemento" HorizontalAlignment="Left" Margin="275,10,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button x:Name="btnOrdenarAZ" Content="Ordenar A-Z" HorizontalAlignment="Left" Margin="10,364,0,0" VerticalAlignment="Top" Width="81"/>
+        <Button x:Name="btnOrdenarZA" Content="Ordenar Z-A" HorizontalAlignment="Left" Margin="10,389,0,0" VerticalAlignment="Top" Width="81"/>
+        <Button x:Name="btnAnnoUp" Content="Λ Año" HorizontalAlignment="Left" Margin="228,364,0,0" VerticalAlignment="Top" Width="42"/>
+        <Button x:Name="btnAnnoDown" Content="V Año" HorizontalAlignment="Left" Margin="228,389,0,0" VerticalAlignment="Top" Width="42"/>
+        <Button x:Name="btnGuardarElemento" Content="Guardar Nuevo Elemento" HorizontalAlignment="Left" Margin="297,364,0,0" VerticalAlignment="Top" Width="154" Visibility="Hidden"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="581,364,0,0" VerticalAlignment="Top" Width="81" Visibility="Hidden"/>
+        <Button x:Name="btnHabilitarEdicion" Content="Habilitar Edicion" HorizontalAlignment="Left" Margin="297,364,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
+        <Button x:Name="btnEliminarElemento" Content="Eliminar Elemento" HorizontalAlignment="Left" Margin="439,364,0,0" VerticalAlignment="Top" Width="110" Visibility="Hidden"/>
+        <Button x:Name="btnActualizarElemento" Content="Actualizar Elemento" HorizontalAlignment="Left" Margin="297,364,0,0" VerticalAlignment="Top" Width="113" Visibility="Hidden" Height="20"/>
 
     </Grid>
 </Window>
