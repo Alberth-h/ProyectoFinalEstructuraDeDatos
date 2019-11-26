@@ -4,30 +4,29 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProyectoFinalEstructuraDeDatos"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d" Width="490" Height="318">
     <Grid>
-        <TextBlock x:Name="lblVisualizarElemento" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Visualizar Elemento" VerticalAlignment="Top" FontSize="24"/>
-        <TextBlock x:Name="lblTipoNuevoElemento" HorizontalAlignment="Left" Margin="10,75,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBlock x:Name="lblTituloVizualizarElemento" HorizontalAlignment="Left" Margin="10,116,0,0" TextWrapping="Wrap" Text="Titulo:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtTituloVizualizarElemento" HorizontalAlignment="Left" Height="23" Margin="58,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376"/>
-        <TextBlock x:Name="lblAnnoVizualizarElemento" HorizontalAlignment="Left" Margin="10,154,0,0" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtAnnoVizualizarElemento" HorizontalAlignment="Left" Height="24" Margin="58,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
-        <TextBlock x:Name="lblGeneroVizualizarElemento" HorizontalAlignment="Left" Margin="232,154,0,0" TextWrapping="Wrap" Text="Genero:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtGeneroVizualizarElemento" HorizontalAlignment="Left" Height="24" Margin="298,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
-        <TextBlock x:Name="lblTemporadasVizualizarElemento" HorizontalAlignment="Left" Margin="10,193,0,0" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtTemporadasVizualizarElemento" HorizontalAlignment="Left" Height="24" Margin="104,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
-        <TextBlock x:Name="lblProductorVizualizarElemento" HorizontalAlignment="Left" Margin="186,193,0,0" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtProductorVizualizarElemento" HorizontalAlignment="Left" Height="24" Margin="265,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
-        <TextBlock x:Name="lblDescripcionVizualizarElemento" HorizontalAlignment="Left" Margin="10,233,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtDescripcionVizualizarElemento" HorizontalAlignment="Left" Height="96" Margin="104,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"/>
-        <TextBlock x:Name="lblRatingVizualizarElemento" HorizontalAlignment="Left" Margin="10,345,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtTipoVizualizarElemento" HorizontalAlignment="Left" Height="23" Margin="58,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Image x:Name="imgEstrellaUno" Margin="104,340,651,68" Source="star.png" Stretch="Fill"/>
-        <Image x:Name="imgEstrellaDos" Margin="149,340,606,68" Source="star.png" Stretch="Fill"/>
-        <Image x:Name="imgEstrellaTres" Margin="197,340,558,68" Source="star.png" Stretch="Fill"/>
-        <Image x:Name="imgEstrellaCuatro" Margin="242,340,513,68" Source="star.png" Stretch="Fill"/>
-        <Image x:Name="imgEstrellaCinco" Margin="287,340,468,68" Source="star.png" Stretch="Fill"/>
-
+        <TextBlock x:Name="lblVisualizar" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Visualizar Elemento" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock x:Name="lblTipoVizualizar" HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbPeliculaVizualizar" Content="Pelicula" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbSerieVizualizar" Content="Serie" HorizontalAlignment="Left" Margin="106,57,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblTituloVizualizar" HorizontalAlignment="Left" Margin="10,77,0,0" TextWrapping="Wrap" Text="Titulo:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTituloVizualizar" HorizontalAlignment="Left" Height="20" Margin="58,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376"/>
+        <TextBlock x:Name="lblAnnoVizualizar" HorizontalAlignment="Left" Margin="12,104,0,0" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAnnoVizualizar" HorizontalAlignment="Left" Height="20" Margin="58,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBlock x:Name="lblGeneroVizualizar" HorizontalAlignment="Left" Margin="232,104,0,0" TextWrapping="Wrap" Text="Genero:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtGeneroVizualizar" HorizontalAlignment="Left" Height="20" Margin="298,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBlock x:Name="lblTemporadasVizualizar" HorizontalAlignment="Left" Margin="10,132,0,0" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTemporadasVizualizar" HorizontalAlignment="Left" Height="20" Margin="104,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <TextBlock x:Name="lblProductorVizualizar" HorizontalAlignment="Left" Margin="186,132,0,0" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtProductorVizualizar" HorizontalAlignment="Left" Height="20" Margin="265,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <TextBlock x:Name="lblDescripcionVizualizar" HorizontalAlignment="Left" Margin="10,159,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDescripcionVizualizar" HorizontalAlignment="Left" Height="100" Margin="104,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"/>
+        <TextBlock x:Name="lblRatingVizualizar" HorizontalAlignment="Left" Margin="10,273,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top"/>
+        <Image x:Name="imgEstrella1" Margin="104,264,346,14" Source="star.png" Stretch="Fill"/>
+        <Image x:Name="imgEstrella2" Margin="144,264,306,14" Source="star.png" Stretch="Fill"/>
+        <Image x:Name="imgEstrella3" Margin="184,264,266,14" Source="star.png" Stretch="Fill"/>
+        <Image x:Name="imgEstrella4" Margin="224,264,226,14" Source="star.png" Stretch="Fill"/>
+        <Image x:Name="imgEstrella5" Margin="264,264,186,14" Source="star.png" Stretch="Fill"/>
     </Grid>
 </UserControl>

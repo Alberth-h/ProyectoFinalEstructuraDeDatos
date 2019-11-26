@@ -58,6 +58,7 @@
     <Compile Include="EditarElemento.xaml.cs">
       <DependentUpon>EditarElemento.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Elemento.cs" />
     <Compile Include="VisualizarElemento.xaml.cs">
       <DependentUpon>VisualizarElemento.xaml</DependentUpon>
     </Compile>

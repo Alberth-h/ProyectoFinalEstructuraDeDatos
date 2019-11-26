@@ -4,31 +4,29 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProyectoFinalEstructuraDeDatos"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d" Width="490" Height="318">
     <Grid>
-        <TextBlock x:Name="lblEditarElemento" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Editar Elemento" VerticalAlignment="Top" FontSize="24"/>
-        <TextBlock x:Name="lblTipoEditarElemento" HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" FontSize="16"/>
-        <RadioButton x:Name="rdbPeliculaEditarElemento" Content="Pelicula" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <RadioButton x:Name="rdbSerieEditarElemento" Content="Serie" HorizontalAlignment="Left" Margin="106,88,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <TextBlock x:Name="lblTituloEditarElemento" HorizontalAlignment="Left" Margin="10,116,0,0" TextWrapping="Wrap" Text="Titulo:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtTituloEditarElemento" HorizontalAlignment="Left" Height="23" Margin="58,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376"/>
-        <TextBlock x:Name="lblAnnoEditarElemento" HorizontalAlignment="Left" Margin="10,154,0,0" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtAnnoEditarElemento" HorizontalAlignment="Left" Height="24" Margin="58,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
-        <TextBlock x:Name="lblGeneroEditarElemento" HorizontalAlignment="Left" Margin="232,154,0,0" TextWrapping="Wrap" Text="Genero:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtGeneroEditarElemento" HorizontalAlignment="Left" Height="24" Margin="298,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
-        <TextBlock x:Name="lblTemporadasEditarElemento" HorizontalAlignment="Left" Margin="10,193,0,0" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtTemporadasEditarElemento" HorizontalAlignment="Left" Height="24" Margin="104,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
-        <Button x:Name="btnTemporadasUpEditarElemento" Content="Λ" HorizontalAlignment="Left" Margin="158,191,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
-        <Button x:Name="btnTemporadasDownEditarElemento" Content="V" HorizontalAlignment="Left" Margin="158,205,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
-        <TextBlock x:Name="lblProductorEditarElemento" HorizontalAlignment="Left" Margin="186,193,0,0" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtProductorEditarElemento" HorizontalAlignment="Left" Height="24" Margin="265,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
-        <TextBlock x:Name="lblDescripcionEditarElemento" HorizontalAlignment="Left" Margin="10,233,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtDescripcionEditarElemento" HorizontalAlignment="Left" Height="96" Margin="104,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"/>
-        <TextBlock x:Name="lblRatingEditarElemento" HorizontalAlignment="Left" Margin="10,345,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtRatingEditarElemento" HorizontalAlignment="Left" Height="24" Margin="73,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="24"/>
-        <Button x:Name="btnRatingUpEditarElemento" Content="Λ" HorizontalAlignment="Left" Margin="104,343,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
-        <Button x:Name="btnRatingDownEditarElemento" Content="V" HorizontalAlignment="Left" Margin="104,357,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
-
+        <TextBlock x:Name="lblEditarElemento" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Editar Elemento" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock x:Name="lblTipoEditar" HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbPeliculaEditar" Content="Pelicula" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbSerieEditar" Content="Serie" HorizontalAlignment="Left" Margin="106,57,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblTituloEditar" HorizontalAlignment="Left" Margin="10,77,0,0" TextWrapping="Wrap" Text="Titulo:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTituloEditar" HorizontalAlignment="Left" Height="20" Margin="58,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376"/>
+        <TextBlock x:Name="lblAnnoEditar" HorizontalAlignment="Left" Margin="12,104,0,0" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAnnoEditar" HorizontalAlignment="Left" Height="20" Margin="58,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBlock x:Name="lblGeneroEditar" HorizontalAlignment="Left" Margin="232,104,0,0" TextWrapping="Wrap" Text="Genero:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtGeneroEditar" HorizontalAlignment="Left" Height="20" Margin="298,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBlock x:Name="lblTemporadasEditar" HorizontalAlignment="Left" Margin="10,132,0,0" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTemporadasEditar" HorizontalAlignment="Left" Height="20" Margin="104,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <Button x:Name="btnTemporadasUpEditar" Content="Λ" HorizontalAlignment="Left" Margin="158,126,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
+        <Button x:Name="btnTemporadasDownEditar" Content="V" HorizontalAlignment="Left" Margin="158,140,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
+        <TextBlock x:Name="lblProductorEditar" HorizontalAlignment="Left" Margin="186,132,0,0" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtProductorEditar" HorizontalAlignment="Left" Height="20" Margin="265,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <TextBlock x:Name="lblDescripcionEditar" HorizontalAlignment="Left" Margin="10,159,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDescripcionEditar" HorizontalAlignment="Left" Height="100" Margin="104,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"/>
+        <TextBlock x:Name="lblRatingEditar" HorizontalAlignment="Left" Margin="10,273,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRatingEditar" HorizontalAlignment="Left" Height="20" Margin="73,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="24"/>
+        <Button x:Name="btnRatingUpEditar" Content="Λ" HorizontalAlignment="Left" Margin="104,267,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
+        <Button x:Name="btnRatingDownEditar" Content="V" HorizontalAlignment="Left" Margin="104,281,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
     </Grid>
 </UserControl>
