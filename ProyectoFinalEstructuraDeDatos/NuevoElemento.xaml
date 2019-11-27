@@ -20,15 +20,11 @@
         <TextBox x:Name="txtGeneroNuevoElemento" HorizontalAlignment="Left" Height="20" Margin="298,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
         <TextBlock x:Name="lblTemporadasNuevoElemento" HorizontalAlignment="Left" Margin="10,132,0,0" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtTemporadasNuevoElemento" HorizontalAlignment="Left" Height="20" Margin="104,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
-        <Button x:Name="btnTemporadasUpNuevoElemento" Content="Λ" HorizontalAlignment="Left" Margin="158,126,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
-        <Button x:Name="btnTemporadasDownNuevoElemento" Content="V" HorizontalAlignment="Left" Margin="158,140,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
         <TextBlock x:Name="lblProductorNuevoElemento" HorizontalAlignment="Left" Margin="186,132,0,0" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtProductorNuevoElemento" HorizontalAlignment="Left" Height="20" Margin="265,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
         <TextBlock x:Name="lblDescripcionNuevoElemento" HorizontalAlignment="Left" Margin="10,159,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtDescripcionNuevoElemento" HorizontalAlignment="Left" Height="100" Margin="104,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"/>
         <TextBlock x:Name="lblRatingNuevoElemento" HorizontalAlignment="Left" Margin="10,273,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtRatingNuevoElemento" HorizontalAlignment="Left" Height="20" Margin="73,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" Text="0"/>
-        <Button x:Name="btnRatingUpNuevoElemento" Content="Λ" HorizontalAlignment="Left" Margin="104,267,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
-        <Button x:Name="btnRatingDownNuevoElemento" Content="V" HorizontalAlignment="Left" Margin="104,281,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
     </Grid>
 </UserControl>

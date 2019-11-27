@@ -37,6 +37,9 @@ namespace ProyectoFinalEstructuraDeDatos
             grdInterfaz.Visibility = Visibility.Visible;
             btnGuardarElemento.Visibility = Visibility.Visible;
             btnCancelar.Visibility = Visibility.Visible;
+            btnHabilitarEdicion.Visibility = Visibility.Hidden;
+            btnEliminarElemento.Visibility = Visibility.Hidden;
+            btnActualizarElemento.Visibility = Visibility.Hidden;
             btnNuevoElemento.Visibility = Visibility.Hidden;
             btnOrdenarAZ.Visibility = Visibility.Hidden;
             btnOrdenarZA.Visibility = Visibility.Hidden;
@@ -66,6 +69,7 @@ namespace ProyectoFinalEstructuraDeDatos
 
             if (lsNombreAnno.SelectedIndex != -1)
             {
+                grdInterfaz.Children.Clear();
                 grdInterfaz.Children.Add(new VisualizarElemento());
                 grdInterfaz.Visibility = Visibility.Visible;
                 btnGuardarElemento.Visibility = Visibility.Hidden;
@@ -73,24 +77,67 @@ namespace ProyectoFinalEstructuraDeDatos
                 btnNuevoElemento.Visibility = Visibility.Hidden;
                 btnHabilitarEdicion.Visibility = Visibility.Visible;
                 btnEliminarElemento.Visibility = Visibility.Visible;
+                btnActualizarElemento.Visibility = Visibility.Hidden;
+                btnOrdenarAZ.Visibility = Visibility.Hidden;
+                btnOrdenarZA.Visibility = Visibility.Hidden;
+                btnAnnoUp.Visibility = Visibility.Hidden;
+                btnAnnoDown.Visibility = Visibility.Hidden;
 
-                /*if(((NuevoElemento)(grdInterfaz.Children[0])).rdbPeliculaNuevoElemento.IsChecked == true)
-                {
-                    ((VisualizarElemento)(grdInterfaz.Children[0])).lblPeliculaVisualizar.Visibility = Visibility.Visible;
-                }
-
-                if (((NuevoElemento)(grdInterfaz.Children[0])).rdbSerieNuevoElemento.IsChecked == true)
-                {
-                    ((VisualizarElemento)(grdInterfaz.Children[0])).lblSerieVisualizar.Visibility = Visibility.Visible;
-                }*/
-
-                
                 ((VisualizarElemento)(grdInterfaz.Children[0])).txtTituloVizualizar.Text = Elementos[lsNombreAnno.SelectedIndex].Titulo;
                 ((VisualizarElemento)(grdInterfaz.Children[0])).txtAnnoVizualizar.Text = Elementos[lsNombreAnno.SelectedIndex].Anno;
                 ((VisualizarElemento)(grdInterfaz.Children[0])).txtGeneroVizualizar.Text = Elementos[lsNombreAnno.SelectedIndex].Genero;
                 ((VisualizarElemento)(grdInterfaz.Children[0])).txtTemporadasVizualizar.Text = Elementos[lsNombreAnno.SelectedIndex].Temporada;
                 ((VisualizarElemento)(grdInterfaz.Children[0])).txtProductorVizualizar.Text = Elementos[lsNombreAnno.SelectedIndex].Productor;
                 ((VisualizarElemento)(grdInterfaz.Children[0])).txtDescripcionVizualizar.Text = Elementos[lsNombreAnno.SelectedIndex].Descripcion;
+
+                if (Elementos[lsNombreAnno.SelectedIndex].Rating == "0")
+                {
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella1.Visibility = Visibility.Hidden;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella2.Visibility = Visibility.Hidden;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella3.Visibility = Visibility.Hidden;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella4.Visibility = Visibility.Hidden;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella5.Visibility = Visibility.Hidden;
+                }
+                if (Elementos[lsNombreAnno.SelectedIndex].Rating == "1")
+                {
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella1.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella2.Visibility = Visibility.Hidden;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella3.Visibility = Visibility.Hidden;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella4.Visibility = Visibility.Hidden;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella5.Visibility = Visibility.Hidden;
+                }
+                if (Elementos[lsNombreAnno.SelectedIndex].Rating == "2")
+                {
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella1.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella2.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella3.Visibility = Visibility.Hidden;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella4.Visibility = Visibility.Hidden;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella5.Visibility = Visibility.Hidden;
+                }
+                if (Elementos[lsNombreAnno.SelectedIndex].Rating == "3")
+                {
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella1.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella2.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella3.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella4.Visibility = Visibility.Hidden;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella5.Visibility = Visibility.Hidden;
+                }
+                if (Elementos[lsNombreAnno.SelectedIndex].Rating == "4")
+                {
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella1.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella2.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella3.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella4.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella5.Visibility = Visibility.Hidden;
+                }
+                if (Elementos[lsNombreAnno.SelectedIndex].Rating == "5")
+                {
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella1.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella2.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella3.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella4.Visibility = Visibility.Visible;
+                    ((VisualizarElemento)(grdInterfaz.Children[0])).imgEstrella5.Visibility = Visibility.Visible;
+                }
             }
         }
 
@@ -122,6 +169,15 @@ namespace ProyectoFinalEstructuraDeDatos
             ((NuevoElemento)(grdInterfaz.Children[0])).txtTemporadasNuevoElemento.Text = "";
             ((NuevoElemento)(grdInterfaz.Children[0])).txtDescripcionNuevoElemento.Text = "";
             ((NuevoElemento)(grdInterfaz.Children[0])).txtRatingNuevoElemento.Text = "";
+            if (((NuevoElemento)(grdInterfaz.Children[0])).txtRatingNuevoElemento.Text == "0" || ((NuevoElemento)(grdInterfaz.Children[0])).txtRatingNuevoElemento.Text == "1" || ((NuevoElemento)(grdInterfaz.Children[0])).txtRatingNuevoElemento.Text == "2" || ((NuevoElemento)(grdInterfaz.Children[0])).txtRatingNuevoElemento.Text == "3" || ((NuevoElemento)(grdInterfaz.Children[0])).txtRatingNuevoElemento.Text == "4" || ((NuevoElemento)(grdInterfaz.Children[0])).txtRatingNuevoElemento.Text == "5")
+            {
+                lblException.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                lblException.Visibility = Visibility.Visible;
+                grdInterfaz.Children.Clear();
+            }
             grdInterfaz.Children.Clear();
         }
 
@@ -199,6 +255,70 @@ namespace ProyectoFinalEstructuraDeDatos
                     }
                 }
             } while (aux == true);
+        }
+
+        private void BtnHabilitarEdicion_Click(object sender, RoutedEventArgs e)
+        {
+            grdInterfaz.Children.Clear();
+            grdInterfaz.Children.Add(new EditarElemento());
+            grdInterfaz.Visibility = Visibility.Visible;
+            btnGuardarElemento.Visibility = Visibility.Hidden;
+            btnCancelar.Visibility = Visibility.Visible;
+            btnNuevoElemento.Visibility = Visibility.Hidden;
+            btnHabilitarEdicion.Visibility = Visibility.Hidden;
+            btnEliminarElemento.Visibility = Visibility.Visible;
+            btnActualizarElemento.Visibility = Visibility.Visible;
+            btnOrdenarAZ.Visibility = Visibility.Hidden;
+            btnOrdenarZA.Visibility = Visibility.Hidden;
+            btnAnnoUp.Visibility = Visibility.Hidden;
+            btnAnnoDown.Visibility = Visibility.Hidden;
+
+            ((EditarElemento)(grdInterfaz.Children[0])).txtTituloEditar.Text = Elementos[lsNombreAnno.SelectedIndex].Titulo;
+            ((EditarElemento)(grdInterfaz.Children[0])).txtAnnoEditar.Text = Elementos[lsNombreAnno.SelectedIndex].Anno;
+            ((EditarElemento)(grdInterfaz.Children[0])).txtGeneroEditar.Text = Elementos[lsNombreAnno.SelectedIndex].Genero;
+            ((EditarElemento)(grdInterfaz.Children[0])).txtTemporadasEditar.Text = Elementos[lsNombreAnno.SelectedIndex].Temporada;
+            ((EditarElemento)(grdInterfaz.Children[0])).txtProductorEditar.Text = Elementos[lsNombreAnno.SelectedIndex].Productor;
+            ((EditarElemento)(grdInterfaz.Children[0])).txtDescripcionEditar.Text = Elementos[lsNombreAnno.SelectedIndex].Descripcion;
+        }
+
+        private void BtnEliminarElemento_Click(object sender, RoutedEventArgs e)
+        {
+            if (lsNombreAnno.SelectedIndex != -1)
+            {
+                Elementos.RemoveAt(lsNombreAnno.SelectedIndex);
+            }
+        }
+
+        private void BtnActualizarElemento_Click(object sender, RoutedEventArgs e)
+        {
+            grdInterfaz.Visibility = Visibility.Hidden;
+            btnGuardarElemento.Visibility = Visibility.Hidden;
+            btnCancelar.Visibility = Visibility.Hidden;
+            btnHabilitarEdicion.Visibility = Visibility.Hidden;
+            btnEliminarElemento.Visibility = Visibility.Hidden;
+            btnActualizarElemento.Visibility = Visibility.Hidden;
+            btnNuevoElemento.Visibility = Visibility.Visible;
+            btnOrdenarAZ.Visibility = Visibility.Visible;
+            btnOrdenarZA.Visibility = Visibility.Visible;
+            btnAnnoUp.Visibility = Visibility.Visible;
+            btnAnnoDown.Visibility = Visibility.Visible;
+            btnOrdenarAZ.Visibility = Visibility.Hidden;
+            btnOrdenarZA.Visibility = Visibility.Hidden;
+            btnAnnoUp.Visibility = Visibility.Hidden;
+            btnAnnoDown.Visibility = Visibility.Hidden;
+
+            if (lsNombreAnno.SelectedIndex != -1)
+            {
+                Elementos[lsNombreAnno.SelectedIndex].Titulo = ((EditarElemento)(grdInterfaz.Children[0])).txtTituloEditar.Text;
+                Elementos[lsNombreAnno.SelectedIndex].Anno = ((EditarElemento)(grdInterfaz.Children[0])).txtAnnoEditar.Text;
+                Elementos[lsNombreAnno.SelectedIndex].Genero = ((EditarElemento)(grdInterfaz.Children[0])).txtGeneroEditar.Text;
+                Elementos[lsNombreAnno.SelectedIndex].Temporada = ((EditarElemento)(grdInterfaz.Children[0])).txtTemporadasEditar.Text;
+                Elementos[lsNombreAnno.SelectedIndex].Productor = ((EditarElemento)(grdInterfaz.Children[0])).txtProductorEditar.Text;
+                Elementos[lsNombreAnno.SelectedIndex].Descripcion = ((EditarElemento)(grdInterfaz.Children[0])).txtDescripcionEditar.Text;
+                Elementos[lsNombreAnno.SelectedIndex].Rating = ((EditarElemento)(grdInterfaz.Children[0])).txtRatingEditar.Text;
+            }
+            lsNombreAnno.Items.Refresh();
+            grdInterfaz.Children.Clear();
         }
     }
 }

@@ -7,11 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Image Margin="314,84,57,106" Source="Blockbuster_logo.svg.png" Opacity="0.75" Stretch="Fill"/>
         <ListView x:Name="lsNombreAnno" HorizontalAlignment="Left" Height="349" Margin="10,10,0,0" VerticalAlignment="Top" Width="260" SelectionChanged="LsNombreAnno_SelectionChanged">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding Titulo}" Header="Titulo" Width="120"></GridViewColumn>
-                    <GridViewColumn DisplayMemberBinding="{Binding Anno}" Header="Año" Width="120"></GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Titulo}" Header="Titulo" Width="120"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Anno}" Header="Año" Width="120"/>
                 </GridView>
             </ListView.View>
         </ListView>
@@ -21,11 +22,11 @@
         <Button x:Name="btnAnnoUp" Content="Λ Año" HorizontalAlignment="Left" Margin="228,364,0,0" VerticalAlignment="Top" Width="42" Click="BtnAnnoUp_Click"/>
         <Button x:Name="btnAnnoDown" Content="V Año" HorizontalAlignment="Left" Margin="228,389,0,0" VerticalAlignment="Top" Width="42" Click="BtnAnnoDown_Click"/>
         <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="581,364,0,0" VerticalAlignment="Top" Width="81" Visibility="Hidden" Click="BtnCancelar_Click"/>
-        <Button x:Name="btnHabilitarEdicion" Content="Habilitar Edicion" HorizontalAlignment="Left" Margin="297,364,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
-        <Button x:Name="btnEliminarElemento" Content="Eliminar Elemento" HorizontalAlignment="Left" Margin="439,364,0,0" VerticalAlignment="Top" Width="110" Visibility="Hidden"/>
-        <Button x:Name="btnActualizarElemento" Content="Actualizar Elemento" HorizontalAlignment="Left" Margin="297,364,0,0" VerticalAlignment="Top" Width="113" Visibility="Hidden" Height="20"/>
+        <Button x:Name="btnHabilitarEdicion" Content="Habilitar Edicion" HorizontalAlignment="Left" Margin="297,364,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden" Click="BtnHabilitarEdicion_Click"/>
+        <Button x:Name="btnEliminarElemento" Content="Eliminar Elemento" HorizontalAlignment="Left" Margin="439,364,0,0" VerticalAlignment="Top" Width="110" Visibility="Hidden" Click="BtnEliminarElemento_Click"/>
+        <Button x:Name="btnActualizarElemento" Content="Actualizar Elemento" HorizontalAlignment="Left" Margin="297,364,0,0" VerticalAlignment="Top" Width="113" Visibility="Hidden" Height="20" Click="BtnActualizarElemento_Click"/>
         <Grid x:Name="grdInterfaz" HorizontalAlignment="Left" Height="329" Margin="275,30,0,0" VerticalAlignment="Top" Width="507"/>
         <Button x:Name="btnGuardarElemento" Content="Guardar Elemento" HorizontalAlignment="Left" Margin="297,364,0,0" VerticalAlignment="Top" Width="154" Visibility="Hidden" Click="BtnGuardarElemento_Click"/>
-
+        <TextBlock x:Name="lblException" HorizontalAlignment="Left" Margin="614,13,0,0" TextWrapping="Wrap" Text="*El rating no puede ser mayor 5" Visibility="Hidden" Foreground="Red" VerticalAlignment="Top"/>
     </Grid>
 </Window>
