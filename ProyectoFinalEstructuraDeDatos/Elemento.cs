@@ -8,28 +8,28 @@ namespace ProyectoFinalEstructuraDeDatos
 {
     class Elemento
     {
-        public string titulo { get; set; }
-        public string anno { get; set; }
-        public string genero { get; set; }
-        public string temporadas { get; set; }
-        public string productor { get; set; }
-        public string descripcion { get; set; }
-        public string rating { get; set; }
+        public string Titulo { get; set; }
+        public string Anno { get; set; }
+        public string Genero { get; set; }
+        public string Temporada { get; set; }
+        public string Productor { get; set; }
+        public string Descripcion { get; set; }
+        public string Rating { get; set; }
 
-        public Elemento(string Titulo, string Anno, string Genero, string Temporadas, string Productor, string Descripcion, string Rating)
+        public Elemento(string titulo, string anno, string genero, string temporada, string productor, string descripcion, string rating)
         {
-            this.titulo = Titulo;
-            this.anno = Anno;
-            this.genero = Genero;
-            this.temporadas = Temporadas;
-            this.productor = Productor;
-            this.descripcion = Descripcion;
-            this.rating = Rating;
+            this.Titulo = titulo;
+            this.Anno = anno;
+            this.Genero = genero;
+            this.Temporada = temporada;
+            this.Productor = productor;
+            this.Descripcion = descripcion;
+            this.Rating = rating;
         }
 
         public override string ToString()
         {
-            return this.titulo + "(" + this.anno + ")";
+            return this.Titulo + this.Anno;
         }
     }
 }

@@ -7,9 +7,11 @@
              mc:Ignorable="d" Width="490" Height="318">
     <Grid>
         <TextBlock x:Name="lblAgregarNuevoElemento" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Agregar Nuevo Elemento" VerticalAlignment="Top" FontSize="16"/>
-        <TextBlock x:Name="lblTipoNuevoElemento" HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rdbPeliculaNuevoElemento" Content="Pelicula" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rdbSerieNuevoElemento" Content="Serie" HorizontalAlignment="Left" Margin="106,57,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblTipoNuevoElemento" HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" Visibility="Visible" />
+        <TextBlock x:Name="lblPeliculaNuevoElemento" HorizontalAlignment="Left" Margin="10,44,0,0" TextWrapping="Wrap" Text="Pelicula" VerticalAlignment="Top" Visibility="Hidden" FontSize="14"/>
+        <TextBlock x:Name="lblSerieNuevoElemento" HorizontalAlignment="Left" Margin="10,44,0,0" TextWrapping="Wrap" Text="Serie" VerticalAlignment="Top" Visibility="Hidden" FontSize="14"/>
+        <RadioButton x:Name="rdbPeliculaNuevoElemento" Content="Pelicula" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Visibility="Visible" Checked="RdbPeliculaNuevoElemento_Checked"/>
+        <RadioButton x:Name="rdbSerieNuevoElemento" Content="Serie" HorizontalAlignment="Left" Margin="106,57,0,0" VerticalAlignment="Top" Visibility="Visible" Checked="RdbSerieNuevoElemento_Checked"/>
         <TextBlock x:Name="lblTituloNuevoElemento" HorizontalAlignment="Left" Margin="10,77,0,0" TextWrapping="Wrap" Text="Titulo:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtTituloNuevoElemento" HorizontalAlignment="Left" Height="20" Margin="58,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376"/>
         <TextBlock x:Name="lblAnnoNuevoElemento" HorizontalAlignment="Left" Margin="12,104,0,0" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top"/>
@@ -25,7 +27,7 @@
         <TextBlock x:Name="lblDescripcionNuevoElemento" HorizontalAlignment="Left" Margin="10,159,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtDescripcionNuevoElemento" HorizontalAlignment="Left" Height="100" Margin="104,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"/>
         <TextBlock x:Name="lblRatingNuevoElemento" HorizontalAlignment="Left" Margin="10,273,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtRatingNuevoElemento" HorizontalAlignment="Left" Height="20" Margin="73,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="24"/>
+        <TextBox x:Name="txtRatingNuevoElemento" HorizontalAlignment="Left" Height="20" Margin="73,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" Text="0"/>
         <Button x:Name="btnRatingUpNuevoElemento" Content="Λ" HorizontalAlignment="Left" Margin="104,267,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
         <Button x:Name="btnRatingDownNuevoElemento" Content="V" HorizontalAlignment="Left" Margin="104,281,0,0" VerticalAlignment="Top" Width="14" Height="14" FontSize="7"/>
     </Grid>

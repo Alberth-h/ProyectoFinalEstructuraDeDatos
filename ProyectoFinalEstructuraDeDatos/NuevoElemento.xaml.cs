@@ -24,5 +24,23 @@ namespace ProyectoFinalEstructuraDeDatos
         {
             InitializeComponent();
         }
+
+        private void RdbPeliculaNuevoElemento_Checked(object sender, RoutedEventArgs e)
+        {
+            lblPeliculaNuevoElemento.Visibility = Visibility.Visible;
+            lblSerieNuevoElemento.Visibility = Visibility.Hidden;
+            rdbPeliculaNuevoElemento.Visibility = Visibility.Hidden;
+            rdbSerieNuevoElemento.Visibility = Visibility.Hidden;
+            lblTipoNuevoElemento.Visibility = Visibility.Hidden;
+        }
+
+        private void RdbSerieNuevoElemento_Checked(object sender, RoutedEventArgs e)
+        {
+            lblPeliculaNuevoElemento.Visibility = Visibility.Hidden;
+            lblSerieNuevoElemento.Visibility = Visibility.Visible;
+            rdbPeliculaNuevoElemento.Visibility = Visibility.Hidden;
+            rdbSerieNuevoElemento.Visibility = Visibility.Hidden;
+            lblTipoNuevoElemento.Visibility = Visibility.Hidden;
+        }
     }
 }

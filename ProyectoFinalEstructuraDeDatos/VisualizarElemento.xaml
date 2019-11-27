@@ -7,9 +7,8 @@
              mc:Ignorable="d" Width="490" Height="318">
     <Grid>
         <TextBlock x:Name="lblVisualizar" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Visualizar Elemento" VerticalAlignment="Top" FontSize="16"/>
-        <TextBlock x:Name="lblTipoVizualizar" HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rdbPeliculaVizualizar" Content="Pelicula" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rdbSerieVizualizar" Content="Serie" HorizontalAlignment="Left" Margin="106,57,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblPeliculaVisualizar" HorizontalAlignment="Left" Margin="10,44,0,0" TextWrapping="Wrap" Text="Pelicula" VerticalAlignment="Top" Visibility="Hidden" FontSize="14"/>
+        <TextBlock x:Name="lblSerieVisualizar" HorizontalAlignment="Left" Margin="10,44,0,0" TextWrapping="Wrap" Text="Serie" VerticalAlignment="Top" Visibility="Hidden" FontSize="14"/>
         <TextBlock x:Name="lblTituloVizualizar" HorizontalAlignment="Left" Margin="10,77,0,0" TextWrapping="Wrap" Text="Titulo:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtTituloVizualizar" HorizontalAlignment="Left" Height="20" Margin="58,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376"/>
         <TextBlock x:Name="lblAnnoVizualizar" HorizontalAlignment="Left" Margin="12,104,0,0" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top"/>
