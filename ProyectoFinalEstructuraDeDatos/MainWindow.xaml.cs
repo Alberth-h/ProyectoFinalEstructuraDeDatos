@@ -47,7 +47,7 @@ namespace ProyectoFinalEstructuraDeDatos
             btnAnnoDown.Visibility = Visibility.Hidden;
 
         }
-
+        
         private void BtnCancelar_Click(object sender, RoutedEventArgs e)
         {
             grdInterfaz.Children.Clear();
